@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KHO Dental</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/DentalLogo.jpeg" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Team</a>
+        </nav>
+        <a href="make_appointment.html" class="btn">Make Appointment</a>
+        <div id="menu-btn"><i class='bx bx-menu'></i></div>
+    </header>
+    <!-- Header End -->
+
+  <!-- Make Appointment Section -->
+  <section class="appointment-section" id="appointment-section">
+    <h1>Make Appointment</h1>
+
+    <form action="#" method="post" onsubmit="return validateForm()">
+      <div class="inputBox">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <div id = "phonenum"></div>
+
+      
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="general">General Dentistry</option>
+        <option value="wisdom">Wisdom Tooth Extraction</option>
+        <option value="children">Children's Dentistry</option>
+        <option value="implants">Dental Implants</option>
+        <option value="braces">Orthodontic Braces</option>
+        
+        <option value="rootcanal">Root Canal Treatment</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button id="submitBtn" type="submit">Submit Appointment</button>
+      </div>
+      
+    </form>
+  </section>
+
+  
+
+  <div class="popupcontainer">
+    <div class="closebtn">&times;</div>
+    <h2>Thank You!</h2>
+    <p>Your details have been successfully submitted. Thanks!</p>
+    <button id="okBtn" class="btn">OK</button>
+  </div>
+</div>
+ 
+  <script src="script.js"></script>
+
+</body>
+</html>
