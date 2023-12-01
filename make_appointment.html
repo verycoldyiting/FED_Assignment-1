@@ -32,19 +32,22 @@
     <!-- Header End -->
 
   <!-- Make Appointment Section -->
-  <section class="appointment-section" id="appointment-section">
-    <h1>Make Appointment</h1>
+<section class="appointment-section" id="appointment-section">
+  <h1>Make Appointment</h1>
 
-    <form action="#" method="post">
-      <div class = "inputBox">
+  <form action="#" method="post" onsubmit="return validateForm();">
+    <div class="inputBox">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
+      <div class="error" id="nameError"></div>
 
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
+      <div class="error" id="emailError"></div>
 
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" required>
+      <div class="error" id="phoneError"></div>
 
       <label for="service">Select Service:</label>
       <select id="service" name="service" required>
@@ -53,7 +56,6 @@
         <option value="children">Children's Dentistry</option>
         <option value="implants">Dental Implants</option>
         <option value="braces">Orthodontic Braces</option>
-        
         <option value="rootcanal">Root Canal Treatment</option>
       </select>
 
@@ -61,21 +63,10 @@
       <input type="date" id="date" name="date" required>
 
       <button id="submitBtn" type="submit">Submit Appointment</button>
-      </div>
-      
-    </form>
-  </section>
+    </div>
+  </form>
+</section>
 
-  
-
-  <div class="popupcontainer">
-    <div class="closebtn">&times;</div>
-    <h2>Thank You!</h2>
-    <p>Your details have been successfully submitted. Thanks!</p>
-    <button id="okBtn" class="btn">OK</button>
-  </div>
-</div>
- 
   <script src="script.js"></script>
 
 </body>

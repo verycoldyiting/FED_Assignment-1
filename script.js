@@ -31,12 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+
 function validateForm() {
   var nameInput = document.getElementById('name');
   var name = nameInput.value.trim();
+  var nameError = document.getElementById('nameError');
 
   if (name == "") {
-    alert("Name can't be blank");
+    nameError.textContent = "Name can't be blank";
     return false;
   }
 
@@ -45,77 +48,51 @@ function validateForm() {
 
   // Assign the capitalized name back to the input field
   nameInput.value = capitalizedName;
+  nameError.textContent = ""; // Clear the error
 
   // Validate email
   var emailInput = document.getElementById('email');
   var email = emailInput.value.trim();
+  var emailError = document.getElementById('emailError');
 
   if (!validateEmail(email)) {
-    alert("Please enter a valid email address");
+    emailError.textContent = "Please enter a valid email address";
     return false;
   }
+  emailError.textContent = ""; // Clear the error
 
   // Validate phone number
   var phoneInput = document.getElementById('phone');
   var phone = phoneInput.value.trim();
+  var phoneError = document.getElementById('phoneError');
 
   if (!validatePhone(phone)) {
-    alert("Please enter a valid phone number");
+    phoneError.textContent = "Please enter a valid phone number";
     return false;
   }
+  phoneError.textContent = ""; // Clear the error
 
-  // Additional validation for other fields can be added here if needed.
 
-  // If all validations pass, show the success popup
-  showSuccessPopup();
-
-  // Prevent the default form submission
-  return false;
+  // Allow the form submission
+  return true;
 }
 
 function validateEmail(email) {
   // Create a regular expression for basic email validation
   var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  // Test if the provided email matches the regular expression
-  var isValidEmail = regex.test(email);
-
-  // Return the result of the test (true if valid, false otherwise)
-  return isValidEmail;
+  return regex.test(email);
 }
-
 
 function validatePhone(phone) {
   // Remove any non-digit characters
   var digitsOnly = phone.replace(/\D/g, "");
 
   // Check if the cleaned phone number has at least 8 digits
-  if (digitsOnly.length >= 8) {
-    return true; // Valid phone number
-  } else {
-    return false; // Invalid phone number
-  }
+  return digitsOnly.length >= 8;
 }
 
 function capitalizeFirstLetter(str) {
   return str.replace(/\b\w/g, function (match) {
     return match.toUpperCase();
-  });
-}
-
-function showSuccessPopup() {
-  var popupContainer = document.querySelector('.popupcontainer');
-  popupContainer.style.display = 'block';
-
-  // Close the popup when the "OK" button is clicked
-  var okBtn = document.getElementById('okBtn');
-  okBtn.addEventListener('click', function () {
-    popupContainer.style.display = 'none';
-  });
-
-  // Close the popup when the close button is clicked
-  var closeBtn = document.querySelector('.closebtn');
-  closeBtn.addEventListener('click', function () {
-    popupContainer.style.display = 'none';
   });
 }

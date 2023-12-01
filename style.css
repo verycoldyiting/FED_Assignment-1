@@ -20,7 +20,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  
   transition: 0.2s linear;
 }
 
@@ -31,7 +31,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ... (scrollbar styles) ... */
 
 section {
   padding: 2rem 7%;
@@ -641,39 +640,42 @@ footer {
 /*Drteam.html end*/
 
 /*make_appt.html*/
-/* Updated styling for the appointment section */
-/* Updated styling for the appointment section */
+
 .appointment-section {
   max-width: 600px;
-  margin: 80px auto; /* Increased top margin for better spacing */
+  margin: 80px auto;
   padding: 40px;
-  background-color: #f9f9f9; /* Lighter background color for a clean look */
+  background-color: var(--light-bg);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .appointment-section h1 {
   text-align: center;
   color: #333;
-  margin-bottom: 20px; /* Added margin below the heading for spacing */
+  margin-bottom: 30px;
 }
 
 form {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  justify-items: center; /* Center the form contents horizontally */
+}
+
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 label {
-  margin-bottom: 8px; /* Slightly increased margin for spacing */
+  margin-bottom: 10px;
   color: #555;
-  display: block;
-  font-weight: bold; /* Added bold font-weight for emphasis */
+  font-weight: bold;
 }
 
-.inputBox {
-  text-align: left;
+.input-container {
+  position: relative;
 }
 
 input,
@@ -683,7 +685,13 @@ select {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-bottom: 10px; /* Increased margin below inputs for spacing */
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
 }
 
 button {
@@ -701,45 +709,21 @@ button:hover {
   background-color: #297fb8;
 }
 
-#submitBtn {
-  padding: 10px 20px;
-  background-color: var(--secondary);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+.error {
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.popupcontainer {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  text-align: center;
+/* Adjust the spacing between Select Service and Preferred Date */
+#service {
+  margin-bottom: 20px;
 }
 
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-#okBtn {
-  padding: 10px 20px;
-  background-color: var(--secondary);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+/* Adjust the spacing between Preferred Date and Submit Appointment */
+#date {
+  margin-bottom: 20px;
 }
 /*make_appt.html end*/
 
