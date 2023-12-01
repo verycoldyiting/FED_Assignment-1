@@ -1,131 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<style>
-    body{
-      background:gray;
-    }
-		.container {
-			display: flex;
-			width: 100%;
-			background-color: #fff;
-			flex-wrap: wrap;
-			/*wrap flex items to a new row if not enough space */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KHO Dental</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-		}
-
-		/* flex item of 20% per item */
-		.flex-item {
-			padding: 2%;
-			flex-grow: 1;
-			flex-basis: 15%;
-			/* 15% for borders*/
-
-			display: flex;
-			flex-direction: column;
-			/* so child elements can use flexbox stuff too! */
-			/* switching on borders will force the 5th flex item to move down*/
-			border: 1px solid #D3D3D3;
-
-
-			/* let's set random images if we want to create cover images */
-			/*
-      background-image: url("https://picsum.photos/400/400");
-      background-size: cover;
-      */
-		}
-
-		.flex-img img {
-			max-width: 100%;
-		}
-
-		.flex-info {
-			margin-top: auto;
-		}
-
-		@media (max-width: 920px) {
-			.flex-item {
-				flex: 1 21%;
-			}
-      /* This is a flex shorthand */
-      /* we set 
-        flex-grow: 1; 
-        flex-basis: 21%;
-        Flex shorthand: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
-        Understand flex grow: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
-      */
-		}
-
-    img{
-      width: 400px;
-    }
-    @media only screen and (max-width: 576px) 
-    {
-        .flex-item{
-            flex: 1 42%;
-            max-width: 50%;
-            box-sizing: border-box;
-            
-        }
-    }
-
-
-	</style>
 </head>
 
 <body>
-	<section class="container">
-		<div class="flex-item">
-			<div class="flex-img">
-				<img src="https://picsum.photos/400/400">
-      </div>
-      <div class="flex-info">
-        <h4>Some info</h4>
-        <p>Some meaningful info</p>
-      </div>
-		</div>
-    <div class="flex-item">
-       <div class="flex-img">
-        <img src="https://picsum.photos/400/400">
-      </div>
-      <div class="flex-info">
-        <h4>Some info</h4>
-        <p>Some meaningful info</p>
-      </div>
-		</div>
-    <div class="flex-item">
-       <div class="flex-img">
-        <img src="https://picsum.photos/400/400">
-      </div>
-      <div class="flex-info">
-        <h4>Some info</h4>
-        <p>Some meaningful info</p>
-      </div>
-		</div>
-    <div class="flex-item">
-     <div class="flex-img">
-        <img src="https://picsum.photos/400/400">
-      </div>
-      <div class="flex-info">
-        <h4>Some info</h4>
-        <p>Some meaningful info</p>
-      </div>
-		</div>
-    <div class="flex-item">
-      <div class="flex-img">
-        <img src="https://picsum.photos/400/400">
-      </div>
-      <div class="flex-info">
-        <h4>Some info</h4>
-        <p>Some meaningful info</p>
-      </div>
-		</div>
-	</section>
 
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/DentalLogo.jpeg" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Team</a>
+        </nav>
+        <a href="make_appointment.html" class="btn">Make Appointment</a>
+        <div id="menu-btn"><i class='bx bx-menu'></i></div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="img-container">
+          <img src="images/homepage.png" alt="Homepage">
+      </div>
+      <div class="content">
+          <h1>Welcome to Kho Dental Clinic</h1>
+
+          <p>Kho Dental Clinic is passionate about serving people and
+              has been<br> providing high-quality and affordable dental
+              care since its establishment<br>in 2003. Our team of highly
+              dedicated dentists excel in various areas of<br> dental care
+              from wisdomteeth extractionto orthodontics.</p>
+          <br>
+
+          <a href="#contact" class="btn"> Contact Us</a>
+
+      </div>
+    </section>
+    <!-- Home End -->
+
+    <!-- About Us -->
+    <section class="about" id="about">
+      
+      <h1>About Us</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/mission.png">
+                  <h3>Mission</h3>
+                  <p>We strive to provide the best dental services that keep our patients’ welfare in mind and provide
+                  satisfaction for all our patients. In the endeavour to fulfil our mission, our team of dedicated doctors and
+                  dental nurses are consistently improving themselves and seeking upgrades in their professional skills.
+                  </p>
+            </div>
+
+            <div class="box">
+                <img src="images/vision.png">
+                  <h3>Vision</h3>
+                  <p>To be an efficient one-stop dental clinic for the community in Singapore. In order to achieve that, we offer
+                   a range of comprehensive dental services for patients from basic dentistry treatment to specialist treatments.
+                  </p>
+            </div>
+
+            <div class="box">
+                <img src="images/Values.png">
+                  <h3>values</h3>
+                  <p> we prioritize Compassion, Excellence, and Trust in your dental care. Our empathetic approach ensures
+                  comfort, commitment to excellence guarantees top-tier service, and transparent, ethical practices earn your
+                  trust. Your oral health and confidence are our utmost priorities, guiding our unparalleled care.
+                  </p>
+            </div>
+        </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <h1>Our Services</h1>
+  
+      <div class="box-container">
+        <div class="box">
+          <a href="General_Dentistry.html">
+            <img src="images/Services-General Dentistry.png" alt="General Dentistry">
+            <h3>General Dentistry</h3>
+          </a>
+        </div>
+        
+  
+        <div class="box">
+          <img src="images/Service-Wisdom Tooth extraction pic 3.png">
+          <h3>Wisdom Tooth Extraction</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/Service-children dentistry pic 2.png">
+          <h3>Children's Dentistry</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/dental implants.png">
+          <h3>Dental Implants</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/Service-Braces pic 1.png">
+          <h3>Orthodontic Braces</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/Rootcanal.png" alt="rootcanal">
+          <h3>Root Canal Treatment</h3>
+        </div>
+
+        <a href="services.html" class="btn"> View More</a>
+
+      </div>
+    </section>
+    <!--- Services End -->
+
+    <!-- Why choose us -->
+    <section class="why_Choose_section">
+      <div class="contianer">
+        <h1>Why Choose Us</h1>
+        <ul class="listing_reasons">
+          <li>
+            • Comprehensive Dental Services
+          </li>
+          <li>
+            • Advanced Technology and Facilities
+          </li>
+          <li>
+            • Emergency Care 24/7
+          </li>
+          <li>
+            • Safe & Comfortable Environment
+          </li>
+          <li>
+            • Friendly & Courteous Staff
+          </li>
+          <li>
+            • Convenient Locations in Singapore
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Why choose us End -->
+
+    <!-- Our Teams -->
+    <section class="team" id="team">
+      <h1>Our Team</h1>
+  
+      <div class="box-container">
+        <div class="box">
+          <img src="images/teams-DR Aileen Chew.png">
+          <h3>Dr Aileen Chew</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/teams-DR Lim Mian Jun.png">
+          <h3>Dr Lim Mian Jun</h3>
+        </div>
+  
+        <div class="box">
+          <a href="drteam.html">
+            <img src="images/teams-DR Peh Yew Jia.png" alt="Dr Peh Yew Jia">
+            <h3>Dr Peh Yew Jia</h3>
+          </a>
+        </div>
+  
+        <div class="box">
+          <img src="images/Teams-DR Tan Kok Hao.png">
+          <h3>Dr Tan Kok Hao</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/teams-DR Low Hwee Kee.png">
+          <h3>Dr Low Hwee Kee</h3>
+        </div>
+  
+        <div class="box">
+          <img src="images/teams-DR Philip Goh.png">
+          <h3>Dr Philip Goh</h3>
+        </div>
+
+      
+
+    
+      </div>
+      <a href="team.html" class="btn"> View More</a>
+    </section>
+    <!-- Our Teams End-->
+
+    <!-- Footer Section -->
+    <footer id="contact">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/DentalLogo.jpeg" alt="Kho Dental Logo">
+        </div>
+
+        <div class="footer-section">
+        <h3>Locations</h3>
+        <ul>
+          <li><strong>AMK Central</strong><br> Blk 727 Ang Mo Kio Avenue 6 #01-4270 Singapore 560727<br> 6452 4222</li>
+          <li><strong>Bedok</strong><br> Blk 210 New Upper Changi Road, #01-733 Singapore 460210<br> 6241 0123</li>
+          <li><strong>Clementi</strong><br> Blk 446 Clementi Avenue 3, #01-193 Singapore 120446<br> 6777 1712</li>
+        </ul>
+        </div>
+
+        <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">General Dentistry</a></li>
+          <li><a href="#">Wisdom Tooth Extraction</a></li>
+          <li><a href="#">Children's Dentistry</a></li>
+          <li><a href="#">Dental Implants</a></li>
+          <li><a href="#">Orthodontic Braces</a></li>
+          <li><a href="#">Root Canal Treatment</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-consultation">
+        <h3>Consultation Hours</h3>
+        <ul>
+          <li><strong>Monday to Friday:</strong> 9am to 9pm</li>
+          <li><strong>Saturday:</strong> 9am to 6pm</li>
+          <li><strong>Sunday & Public Holidays:</strong> Closed</li>
+        </ul>
+        </div>
+
+
+        <div class="copyright">
+        <p>&copy; 2021 By Kho Dental. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <div id="popup-container">
+      <div id="popup-content">
+        <span id="close-popup">&times;</span>
+        <h2>Special Promotion!</h2>
+        <p>Don't miss our exclusive holiday discounts on specific services. Schedule your appointment now!</p>
+        <a href="make_appointment.html" class="btn">Schedule Now</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
