@@ -1,6 +1,3 @@
-script.js
-
-
 document.addEventListener('DOMContentLoaded', function () {
   // Show the pop-up after a delay
   setTimeout(function () {
