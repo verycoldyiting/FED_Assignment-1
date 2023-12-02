@@ -20,7 +20,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  
   transition: 0.2s linear;
 }
 
@@ -82,7 +81,7 @@ section {
   font-size: 18px;
   letter-spacing: 0.1rem;
   color: var(--black);
-  margin: 1rem 0;  /*0 1 rem*/
+  margin: 1rem 0; 
   text-align: center;
 }
 
@@ -112,10 +111,8 @@ section {
 
 #menu-btn {
   display: block;
-  font-size: 24px; /* Increase the font size for a larger button */
+  font-size: 24px; 
   cursor: pointer;
-  /*color: var(--black);
-  margin-left: 1rem;*/
 }
 
 
@@ -197,6 +194,7 @@ section {
 .home .content .btn:hover {
   background: var(--secondary);
 }
+/* home end */
 
 
 /* about us */
@@ -254,17 +252,19 @@ h1 {
   font-size: 1rem;
   color: var(--gray);
 }
+/* about us end */
 
 /* services */
 .services {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding: 40px 20px; /* Increase padding for better spacing */
+  padding: 40px 20px; 
+
 }
 
 .services h1 {
-  margin-bottom: 10px; /* Add margin to separate the title from the boxes */
+  margin-bottom: 10px; 
   
 }
 
@@ -276,41 +276,41 @@ h1 {
 }
 
 .services .box-container .box {
-  position: relative; /* Add position relative to create a stacking context */
-  width: calc(33.33% - 20px); /* Adjusted width to allow 3 boxes in a row */
-  margin-bottom: 30px; /* Adjusted margin for better spacing between rows */
+  position: relative; 
+  width: calc(33.33% - 20px); 
+  margin-bottom: 30px; 
   text-align: center;
-  overflow: hidden; /* Hide overflow to prevent unwanted movement */
+  overflow: hidden; 
 }
 
 .services .box-container .box img {
-  width: 100%; /* Make sure images fill the box */
-  height: 200px; /* Set a specific height for all images, adjust as needed */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  border-radius: 10px; /* Add border-radius to images */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Add a transition effect for smooth movement and filter */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px; 
+  transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .services .box-container .box:hover img {
-  transform: scale(1.1); /* Scale the image slightly on hover */
-  filter: brightness(0.8); /* Darken the background color on hover */
+  transform: scale(1.1); 
+  filter: brightness(0.8); 
 }
 
 .services .box-container .box h3 {
-  font-size: 1.2rem; /* Adjusted font size for better responsiveness */
+  font-size: 1.2rem; 
   font-weight: 600;
-  margin-top: 10px; /* Adjusted margin for better spacing */
+  margin-top: 10px; 
   color: var(--black);
 }
 
 .services .box-container .box p {
-  font-size: 1rem; /* Adjusted font size for better responsiveness */
+  font-size: 1rem; 
   color: var(--gray);
 }
 
-/* Add this to your existing CSS */
+
 .services .box-container .box button.view-more-btn {
-  background-color: var(--blue); /* Change color to your preference */
+  background-color: var(--blue); 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -320,19 +320,18 @@ h1 {
 }
 
 .services .box-container .box button.view-more-btn:hover {
-  background-color: var(--dark-blue); /* Change color to your preference */
+  background-color: var(--dark-blue); 
 }
 
 /*services end*/
 
 /*why choose us*/
-/* Center the Why Choose Us section */
 .why_Choose_section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40vh; /* Adjust the height as needed */
-  background: #f5f5f5; /* Add a background color for better visibility */
+  min-height: 40vh; 
+  background: #f5f5f5; 
 }
 
 .contianer {
@@ -351,18 +350,18 @@ h1 {
 
 /*why choose us end*/
 
+
 /*teams*/
-/* Team Section */
 .team {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding: 40px 20px; /* Increased padding for better spacing */
+  padding: 40px 20px; 
 }
 
 .team h1, .services h1 {
   margin-top: 90px;
-  font-size: 30px; /* Increased font size for a more prominent heading */
+  font-size: 30px; 
   color: var(--black);
 }
 
@@ -370,7 +369,7 @@ h1 {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Center the boxes horizontally with space-around */
+  justify-content: space-around; 
 }
 
 .team .box-container .box {
@@ -385,37 +384,35 @@ h1 {
 }
 
 .team .box-container .box img {
-  width: 100%; /* Make sure images fill the box */
-  max-height: 400px; /* Set a maximum height for the images to show face to waist */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  border-radius: 10px; /* Add border-radius to images */
-  transition: transform 0.3s ease; /* Add a transition effect for smooth movement */
+  width: 100%; 
+  max-height: 400px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease; 
 }
 
 .team .box-container .box:hover img {
-  transform: scale(1.1); /* Scale the image slightly on hover */
+  transform: scale(1.1); 
 }
 
 .team .box-container .box h3 {
-  font-size: 1.5rem; /* Adjusted font size for better responsiveness */
+  font-size: 1.5rem; 
   font-weight: 600;
-  margin-top: 15px; /* Adjusted margin for better spacing */
+  margin-top: 15px; 
   color: var(--black);
 }
 
 .team .box-container .box p {
-  font-size: 1rem; /* Adjusted font size for better responsiveness */
+  font-size: 1rem; 
   color: var(--gray);
 }
 
 /*team end*/
 
 
-/*footer*/
-
 /* Footer Section */
 footer {
-  background-color: #87CEFA; /* Light Blue Color */
+  background-color: #87CEFA; 
   padding: 20px 0;
 }
 
@@ -435,7 +432,7 @@ footer {
 }
 
 .footer-section {
-  flex-basis: calc(25% - 20px); /* Adjusted width for all four sections */
+  flex-basis: calc(25% - 20px); 
   text-align: center;
   margin-bottom: 20px;
 }
@@ -452,14 +449,12 @@ footer {
 }
 
 .footer-section ul {
-  list-style: none; /* Remove bullet points */
+  list-style: none; 
   padding: 0;
 } 
 
-
-/* Updated CSS */
 .footer-consultation ul {
-  list-style: none; /* Remove bullet points */
+  list-style: none; 
   padding: 0;
 }
 
@@ -485,7 +480,6 @@ footer {
 }
 
 
-/* Add this to your existing CSS or create a new stylesheet for pop-up styles */
 #popup-container {
   display: none;
   position: fixed;
@@ -524,9 +518,9 @@ footer {
 
 .servicespage {
   position: relative;
-  background: url('Assg1images/rootcanal (2).png') center/cover no-repeat; /* Set the image as the background */
+  background: url('Assg1images/rootcanal (2).png') center/cover no-repeat; 
   text-align: center;
-  padding: 240px 20px; /* Adjust the padding according to your design */
+  padding: 240px 20px; 
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -538,89 +532,95 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity by changing the last value (0.5 for 50% opacity) */
+  background-color: rgba(0, 0, 0, 0.7); 
   z-index: -1;
 }
 
 .box-link {
-  display: inline-block; /* or display: block; depending on your layout */
+  display: inline-block; 
   text-decoration: none;
-  color: inherit; /* To inherit the color from the parent */
+  color: inherit; 
 }
+
+/* services.html end */
 
 /*General Dentistry.html*/
-/* Centering and styling the main content */
-.content-container{
+.content-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 50px; /* Adjusted padding for better spacing */
   text-align: center;
 }
 
-/* Styling the article */
-.content-container  .article {
+.article {
   text-align: left;
 }
 
-/* Styling h1 within the article */
-.content-container .article h1 {
-  text-align: center;
-  
-}
-
-.centered-image{
+.centered-image {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto; /* Adjusted margin for better spacing */
   max-width: 100%;
   height: auto;
-  
-  width: 100%;
 }
 
-/* Styling unordered lists */
-.content-container .article ul {
+.article h1 {
+  text-align: center;
+  color: var(--black); /* Updated color for better visibility */
+}
+
+.article h2 {
+  color: #2f66d4; /* Updated color for better visibility */
+}
+
+.article p {
+  margin-bottom: 20px;
+}
+
+.article ul {
   list-style-type: disc;
   padding: 0;
-  text-align: left;
 }
 
-/* Styling list items */
-.content-container .article ul li {
+.article ul li {
   margin-bottom: 8px;
 }
 
-/*Drteam.html*/
+/* general dentistry.html end */
 
-.content-part{
+
+/*Drteam.html*/
+.content-part {
   max-width: 800px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 80px;
 }
 
-.drarticle{
+.drarticle {
   text-align: center;
 }
 
-.drarticle h1{
+.drarticle h1 {
   text-align: center;
   margin-bottom: 20px;
-  padding: 50px;
+  padding: 25px 0; /* Adjusted padding for better spacing */
 }
 
-.drarticle img{
+.dr-article img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-  
+  border-radius: 10px; /* Added border-radius for rounded corners */
+
 }
 
-.dr-info p{
+.dr-info p {
+  padding-top: 25px;
   margin-bottom: 15px;
 }
 
-.dr-activities h3{
+.dr-activities h3 {
   margin-bottom: 10px;
 }
 
@@ -639,8 +639,8 @@ footer {
 }
 /*Drteam.html end*/
 
-/*make_appt.html*/
 
+/*make_appt.html*/
 .appointment-section {
   max-width: 600px;
   margin: 80px auto;
@@ -716,19 +716,16 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* Adjust the spacing between Select Service and Preferred Date */
 #service {
   margin-bottom: 20px;
 }
 
-/* Adjust the spacing between Preferred Date and Submit Appointment */
 #date {
   margin-bottom: 20px;
 }
 /*make_appt.html end*/
 
 
-/* Add this at the end of your existing CSS file */
 
 /* Responsive Styles */
 /* Mobile View Styles */
@@ -763,14 +760,12 @@ button:hover {
 
 .home .img-container {
   display: none;
-  /*width: 100%;*/
 }
 
 
 .home .content {
   padding: 1.5rem;
 }
-
 
   .about .box-container .box,
   .services .box-container .box,
@@ -781,7 +776,7 @@ button:hover {
   }
 
   .footer-section {
-    flex-basis: 100%; /* Full width for each section on mobile */
+    flex-basis: 100%; 
   }
 
   .content-container{
@@ -793,12 +788,9 @@ button:hover {
   }
 
   .content-container .article h1 {
-    text-align: center; /* Center the heading within the article for mobile */
+    text-align: center; 
   }
 }
-
-  
-  
 
 
 /* Tablet View Styles */
@@ -825,7 +817,7 @@ button:hover {
 
   .home .content p {
     display: block;
-    /* Add any additional styles for smaller screens if needed */
+
   }
 
   .about .box-container .box,
@@ -836,13 +828,14 @@ button:hover {
     margin-bottom: 20px;
   }
   .footer-section {
-    flex-basis: calc(25% - 20px); /* Adjusted width for all four sections on desktop */
+    flex-basis: calc(25% - 20px); 
   }
 
   .content-container{
     padding: 40px;
   }
 }
+
 
 /* Desktop View Styles */
 @media screen and (min-width: 1024px) {
