@@ -96,3 +96,20 @@ function capitalizeFirstLetter(str) {
     return match.toUpperCase();
   });
 }
+
+document.getElementById("submitBtn").addEventListener("click", function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+
+  // Validate the form
+  if (validateForm()) {
+    // Your form submission logic (if any) can go here
+
+    // Display a success message or redirect to a thank-you page
+    alert("Your details have been successfully submitted. Thanks!");
+  }
+});
+
+function myFunction() {
+  alert("Your details have been successfully submitted. Thanks!");
+}
